@@ -14,6 +14,7 @@ This Android application captures live camera frames using the Camera2 API, proc
 
 ## 🧑‍Working App
 
+<img src="./Demo.gif" alt="demo video" width="400"/>
 ![demo video](./Demo.gif)
 
 ## ⚙ Setup Instructions
