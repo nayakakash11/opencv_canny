@@ -12,6 +12,10 @@ This Android application captures live camera frames using the Camera2 API, proc
 - Real-time Canny edge detection (OpenCV via JNI)
 - Processed frames rendered with OpenGL ES 2.0
 
+## 🧑‍Working App
+
+![demo video](./Demo.gif)
+
 ## ⚙ Setup Instructions
 
 1. **Install Android Studio & NDK**

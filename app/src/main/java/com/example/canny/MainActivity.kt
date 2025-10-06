@@ -85,7 +85,6 @@ class MainActivity : AppCompatActivity() {
                     edgeDetection(bitmap, dst)
                     glRenderer.updateBitmap(dst)
                     glSurfaceView.requestRender()
-                    // Optional: also update ImageView
                     runOnUiThread {
                         binding.imageView5.setImageBitmap(dst)
                     }
