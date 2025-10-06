@@ -18,9 +18,10 @@
         android:id="@+id/glSurfaceView"
         android:layout_width="match_parent"
         android:layout_height="423dp"
-        app:layout_constraintTop_toBottomOf="@id/textureView"
+        app:layout_constraintBottom_toTopOf="@+id/Detbtn"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/textureView" />
 
 
     <Button
@@ -46,6 +47,7 @@
         android:layout_marginBottom="200dp"
         app:layout_constraintBottom_toTopOf="@+id/Detbtn"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/mountain" />

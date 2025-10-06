@@ -4,7 +4,7 @@ OpenCV Canny Edge Detection on Android with Camera2 and OpenGL ES 2.0
 A sample Android application demonstrating real-time Canny edge detection using OpenCV, Camera2 API, and OpenGL ES 2.0.
 
 ## 📸 Overview
-This Android application captures live camera frames using the Camera2 API, processes them with OpenCV to perform Canny edge detection, and renders the processed frames using OpenGL ES 2.0. The app also provides an option to display the processed frames in an `ImageView`.        
+This Android application captures live camera frames using the Camera2 API, processes them with OpenCV to perform Canny edge detection, and renders the processed frames using OpenGL ES 2.0.
 
 ## ✅ Features
 
