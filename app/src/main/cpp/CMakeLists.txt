@@ -11,6 +11,11 @@ cmake_minimum_required(VERSION 3.22.1)
 # build script scope).
 project("canny")
 
+set(OpenCV_STATIC on)
+set(OpenCV_DIR /Users/akashnayak/Downloads/OpenCV-android-sdk/sdk/native/jni)
+find_package(OpenCV REQUIRED)
+
+
 # Creates and names a library, sets it as either STATIC
 # or SHARED, and provides the relative paths to its source code.
 # You can define multiple libraries, and CMake builds them for you.
@@ -24,14 +29,21 @@ project("canny")
 # System.loadLibrary() and pass the name of the library defined here;
 # for GameActivity/NativeActivity derived applications, the same library name must be
 # used in the AndroidManifest.xml file.
-add_library(${CMAKE_PROJECT_NAME} SHARED
+add_library(native-lib SHARED
         # List C/C++ source files with relative paths to this CMakeLists.txt.
+        opencv-utils.cpp
         native-lib.cpp)
+
+find_library(log-lib log)
+
+find_library(jnigraphics-lib jnigraphics)
 
 # Specifies libraries CMake should link to your target library. You
 # can link libraries from various origins, such as libraries defined in this
 # build script, prebuilt third-party libraries, or Android system libraries.
-target_link_libraries(${CMAKE_PROJECT_NAME}
+target_link_libraries(native-lib
         # List libraries link to the target library
-        android
-        log)
+        ${OpenCV_LIBS}
+        ${jnigraphics-lib}
+        # Links the target library to the log library
+        ${log-lib})
